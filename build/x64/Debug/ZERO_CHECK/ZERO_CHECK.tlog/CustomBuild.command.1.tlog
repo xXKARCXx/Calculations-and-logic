@@ -1,0 +1,10 @@
+^C:\USERS\ANTHONY\DOCUMENTS\GITHUB\CALCULATIONS-AND-LOGIC\BUILD\CMAKEFILES\28E09FEB8B1494C8C85D6A8138D649BE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Anthony/Documents/GitHub/Calculations-and-logic -BC:/Users/Anthony/Documents/GitHub/Calculations-and-logic/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Anthony/Documents/GitHub/Calculations-and-logic/build/CalculationsAndLogic.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,3 @@
+C:/Users/Anthony/Documents/GitHub/Calculations-and-logic/build/CMakeFiles/outDebug.dir
+C:/Users/Anthony/Documents/GitHub/Calculations-and-logic/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Anthony/Documents/GitHub/Calculations-and-logic/build/CMakeFiles/ZERO_CHECK.dir
