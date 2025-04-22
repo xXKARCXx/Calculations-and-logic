@@ -1,13 +1,25 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 
+  void twoSum (){
+    std::vector<int> arr = {1, 2, 3, 4, 5};
+    int target = 5;
+    
+    for (int i = 1; i < arr.size(); i++){
+        for (int j = 0; j < arr.size(); j++){
+            if (arr[i] + arr[j] == target){
+                cout << "The two numbers are: " << arr[i] << " and " << arr[j] << endl;
+            }
+        }
+    }
+  }
 
-void TimeConverter (){
 
-
-}
+// void TimeConverter (){;
+// }
 
 void converter_menu ()
 {
@@ -40,42 +52,44 @@ cout << "This amount of secound in this amount of hours: " << (hour * minC) << e
 }
 
 int main(){
-    int choice;
-    cout << "                                                   " << endl;
-    cout << "                 Choose Option 1 or 2 or 3" << endl;
-    cout<< "<------------------------------------------------------->" << endl;
-    while (true)
-    {
-        converter_menu();
-        cout << endl;
-        cout << "                Enter your choice: ";
-        cin >> choice;
-        cout << endl;
-        cout << "              You have picked choice "<< choice << endl;
+    // int choice;
+    // cout << "                                                   " << endl;
+    // cout << "                 Choose Option 1 or 2 or 3" << endl;
+    // cout<< "<------------------------------------------------------->" << endl;
+    // while (true)
+    // {
+    //     converter_menu();
+    //     cout << endl;
+    //     cout << "                Enter your choice: ";
+    //     cin >> choice;
+    //     cout << endl;
+    //     cout << "              You have picked choice "<< choice << endl;
 
-        if (choice == 3){
-            cout << endl;
-            cout << "                Exited. Goodbye Now!" << endl;
-            cout << "                                              " << endl;
-            break;
-        }
-        switch (choice)
-        {
-        case 1:
-            min_secCon();
-            cout << "                                              " << endl;
-            break;
-        case 2:
-            hour_secCon();
-            cout << "                                              " << endl;
-            break;
-        default:
-        cout << "Try again!" << endl;
-        cout << "                                              " << endl;
-        break;
-        }
+    //     if (choice == 3){
+    //         cout << endl;
+    //         cout << "                Exited. Goodbye Now!" << endl;
+    //         cout << "                                              " << endl;
+    //         break;
+    //     }
+    //     switch (choice)
+    //     {
+    //     case 1:
+    //         min_secCon();
+    //         cout << "                                              " << endl;
+    //         break;
+    //     case 2:
+    //         hour_secCon();
+    //         cout << "                                              " << endl;
+    //         break;
+    //     default:
+    //     cout << "Try again!" << endl;
+    //     cout << "                                              " << endl;
+    //     break;
+    //     }
 
-    }
+    // }
+
+    twoSum();
     
     return 0;
 }
